@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>GameTeam.cz Prikazy</title>
+<body bgcolor="#00000">
+<div style="position: absolute; left: 30px; top: 30px;">
+<p><font color="white">
+<h2>Prikazy na serverech</h2><br>
+<font color="red">/menu</font> - zobrazi menu pro dany server<br>
+<font color="red">/rank</font> - zobrazi tvuj rank v celkove statistice<br>
+<font color="red">/top15</font> - zobrazi statistiku 15 nejlepsich hracu na serveru<br>
+<font color="red">/statsme</font> - zobrazi tvoji statistiku<br>
+<font color="red">/server</font> - zobrazo seznam vsech serveru<br>
+<font color="red">/zprava</font> - umoynuje posilani soukromych zprav na serveru<br>
+<font color="red">/radio</font> - zobrazi se seznam radii, ktery si muzes pustit<br>
+<font color="red">/vip</font> - pro aktivaci VIP na GT serverech<br>
+</font></p>
+</div>
+</body>
+</html>

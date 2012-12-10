@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>GameTeam.cz Pravidla</title>
+<body bgcolor="#00000">
+<div style="position: absolute; left: 30px; top: 30px;">
+<p><font color="white">
+<h2>Pravidla na serverech</h2><br>
+1.Je zakazano <font color="red">cheatovat</font> na serverech.<br>
+2.Je zakazano pouzivat <font color="red">scripty</font>. (bhop, antirecoil)<br>
+3.Je zakazano <font color="red">kempit</font>.<br>
+4.Je zakazano lezeni do textur.<br>
+5.Je zakazano nadavat ostatnim hracum ani adminum.<br>
+6.Zakaz reklam, reklamnich nicku ci odkazu.<br>
+7.Zakaz vyuzivani chyb, ktere jsou ve hre.<br>
+8.Zakaz Teamkillingu, TeamFlashingu.<br>
+9.Plnit povinnosti mapy. (hostages, plant, defuse)<br>
+</font></p>
+</div>
+</body>
+</html>

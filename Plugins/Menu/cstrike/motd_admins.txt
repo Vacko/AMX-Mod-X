@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>GameTeam.cz Admini</title>
+
+<style type="text/css">
+table.stab {font-size:12px;color:#333333;width:60%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
+table.stab th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
+table.stab tr {background-color:#d4e3e5;}
+table.stab td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
+</style>
+
+<body bgcolor="#00000">
+<div align="center">
+	<table class="stab" cellspacing="0" cellpadding="0">
+	   <tr> 
+	    <th>Nick</th>
+	    <th>Pøístupy</th>
+	    <th>ICQ</th>
+            <th>Skype</th>
+	   </tr>
+	   <tr>
+	    <td >Admin 1</td>
+	    <td >XXXX</td>
+	    <td >XXXX</td>
+	    <td > </td>
+           </tr>
+	</table>
+</div>
+</body>
+</html>
