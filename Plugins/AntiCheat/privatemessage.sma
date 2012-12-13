@@ -11,13 +11,13 @@ new maxplayers
 public plugin_init() {
 	register_plugin(PLUGIN, VERSION, AUTHOR);
 	register_clcmd("amx_pmessage", "send_message", 0, "<player> <message> - user sends a message to another user.");
-	register_clcmd("amx_amessage", "send_chat", 0, "<message> - leave a message for the admin.");	
+	register_clcmd("amx_amessage", "send_admin_message", 0, "<message> - leave a message for the admin.");	
     maxplayers = get_maxplayers()
 }
 
 
-public send_message(id, level, cid) {
-	
+public send_message(id, level, cid) 
+{	
 	if (!cmd_access(id, level, cid, 3))
 		return PLUGIN_HANDLED
 	
@@ -31,14 +31,16 @@ public send_message(id, level, cid) {
 	new name[32];
 	get_user_name(uid, name, 31)
 	
-	if (uid == 0) { 
-		console_print(id, "[AMXX] Sorry, unable to find player with that name.")
-		return PLUGIN_HANDLED;
+	if (uid == 0) 
+        { 
+	    console_print(id, "[AMXX] Sorry, unable to find player with that name.")
+	    return PLUGIN_HANDLED;
 	}
 	
-	if(!is_user_alive(id)) { 
-		client_print(id,print_chat,"[AMXX] Can't send PMs while dead!")
-		return PLUGIN_HANDLED;
+	if(!is_user_alive(id)) 
+        { 
+	    client_print(id,print_chat,"[AMXX] Can't send PMs while dead!")
+	    return PLUGIN_HANDLED;
 	}
 	
 	new basedir[64]
@@ -60,11 +62,10 @@ public send_message(id, level, cid) {
 }
 
 
-public send_chat(id, level, cid) {
-	
+public send_admin_message(id, level, cid) 
+{	
 	if (!cmd_access(id, level, cid, 2))
 		return PLUGIN_HANDLED
-	
 	
 	new adminnames[33][32]
 	new idm, count, x, xid
@@ -87,27 +88,29 @@ public send_chat(id, level, cid) {
 			if(get_user_flags(idm) & ADMIN_CHECK)
 				get_user_name(idm, adminnames[count++], 31)	
 			
-	if(count > 0) {
-		for(x = 0 ; x < count ; x++) {
-			get_user_name(xid, adminnames[x], 31)
+	if(count > 0) 
+        {
+	    for(x = 0 ; x < count ; x++) 
+            {
+		get_user_name(xid, adminnames[x], 31)
 			
-            if (!id == xid) { 
-               client_print(xid, print_chat, "** Message from %s: %s **", sendername, left)
-		       return PLUGIN_HANDLED;
-	        }			
-			
-		}
+                if (!id == xid) 
+		{ 
+                   client_print(xid, print_chat, "** Message from %s: %s **", sendername, left)
+		   return PLUGIN_HANDLED;
+	        }				
+	    }
 
-	}else {
+	}
+        else
+        {
+	   new LOG_FILE[164]
+	   format(LOG_FILE, 163, "%s/logs/admins_offline.log", basedir)
+	   new log[256];
+	   format(log,255,"Message from %s(%s): %s",sendername,sendersteam,left)
+	   write_file(LOG_FILE,log);
+        }
 
-		new LOG_FILE[164]
-		format(LOG_FILE, 163, "%s/logs/admins_offline.log", basedir)
-		
-		new log[256];
-		format(log,255,"Message from %s(%s): %s",sendername,sendersteam,left)
-		write_file(LOG_FILE,log);
-	
-    }
 	return PLUGIN_HANDLED
 }
 	
