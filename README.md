@@ -2,8 +2,8 @@
 
 ## General
 
-- [AntiCheat](https://github.com/Vacko/AMX-Mod-X/tree/master/Plugins/AntiCheat): AntiCheat based on hidden message send to admin team if any admin is online otherwise logging into file.
-- [Menu](https://github.com/Vacko/AMX-Mod-X/tree/master/Plugins/Menu) Menu for VIP players
+- [AntiCheat](https://github.com/Vacko/AMX-Mod-X/tree/master/Plugins/AntiCheat): based on hidden message send to admin team if any admin is online otherwise logging into file.
+- [Menu](https://github.com/Vacko/AMX-Mod-X/tree/master/Plugins/Menu) for VIP players
 
 ## Copyright and License
 
